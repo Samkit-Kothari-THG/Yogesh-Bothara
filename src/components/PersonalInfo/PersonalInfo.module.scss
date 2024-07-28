@@ -8,14 +8,14 @@
   max-width: 600px;
   opacity: 0;
   animation: fadeInContainer 1s forwards;
-  animation-delay: 0s; // Adjust the delay for sequential animation
+  animation-delay: 0s;
 
   h1 {
     color: #b8860b; // Gold color
     font-size: 24px;
     text-align: center;
     font-family: 'Tangerine', cursive;
-    animation: fadeIn 2s forwards;
+    animation: fadeInTitle 2s forwards;
     animation-delay: 0.5s;
   }
 
@@ -23,19 +23,7 @@
     color: #333;
     font-size: 18px;
     margin: 10px 0;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
   }
-
-  p:nth-child(2) { animation-delay: 1s; }
-  p:nth-child(3) { animation-delay: 1.5s; }
-  p:nth-child(4) { animation-delay: 2s; }
-  p:nth-child(5) { animation-delay: 2.5s; }
-  p:nth-child(6) { animation-delay: 3s; }
-  p:nth-child(7) { animation-delay: 3.5s; }
-  p:nth-child(8) { animation-delay: 4s; }
-  p:nth-child(9) { animation-delay: 4.5s; }
-  p:nth-child(10) { animation-delay: 5s; }
 
   @media (max-width: 600px) {
     padding: 10px;
@@ -50,10 +38,10 @@
     }
   }
 
-  @keyframes fadeIn {
+  @keyframes fadeInTitle {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(-20px);
     }
     to {
       opacity: 1;
