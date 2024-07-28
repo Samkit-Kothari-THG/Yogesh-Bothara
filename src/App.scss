@@ -1,18 +1,38 @@
 .App {
-  
   font-family: "Georgia", serif;
   background-image: url("./assets/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logo {
+  height: 25px;
+  width: 25px;
+  filter: invert(100);
+}
 .App-header {
-  background-color: #b8860b; // Dark red background
+  background-color: #b8860b;
   padding: 20px;
   color: white;
   opacity: 0;
   animation: fadeInContainer 1s forwards;
   text-align: center;
+}
+.App-Footer {
+  background-color: #b8860b;
+  padding: 20px;
+  color: white;
+  opacity: 0;
+  animation: fadeInContainer 1s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .App-header h1 {
@@ -27,8 +47,12 @@
     font-size: 24px;
   }
 
-  .App-header {
+  .App-header,
+  .App-Footer {
     padding: 10px;
+  }
+  .App-Footer {
+    flex-direction: column;
   }
 }
 
