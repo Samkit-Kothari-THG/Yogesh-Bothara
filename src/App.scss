@@ -1,25 +1,38 @@
 .App {
-    text-align: center;
-    font-family: 'Georgia', serif;
-  }
-  
-  .App-header {
-    background-color: #8b0000; /* Dark red background */
-    padding: 20px;
-    color: white;
-  }
-  
+  text-align: center;
+  font-family: 'Georgia', serif;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App-header {
+  background-color: #8b0000; // Dark red background
+  padding: 20px;
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 36px;
+  font-family: 'Tangerine', cursive;
+  animation: fadeIn 2s;
+}
+
+@media (max-width: 600px) {
   .App-header h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
-  
-  @media (max-width: 600px) {
-    .App-header h1 {
-      font-size: 24px;
-    }
-  
-    .App-header {
-      padding: 10px;
-    }
+
+  .App-header {
+    padding: 10px;
   }
-  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

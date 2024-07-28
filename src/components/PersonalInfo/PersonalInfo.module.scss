@@ -1,35 +1,45 @@
-.personal-info {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-family: 'Georgia', serif;
-    max-width: 600px;
-  }
-  
-  .personal-info h1 {
-    color: #b8860b; /* Gold color */
+.personalInfo {
+  background-color: #faf8ef;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+  max-width: 600px;
+
+  h1 {
+    color: #b8860b; // Gold color
     font-size: 24px;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    animation: fadeIn 2s;
   }
-  
-  .personal-info p {
+
+  p {
     color: #333;
     font-size: 18px;
+    margin: 10px 0;
   }
-  
+
   @media (max-width: 600px) {
-    .personal-info {
-      padding: 10px;
-      margin: 10px;
-    }
-  
-    .personal-info h1 {
+    padding: 10px;
+    margin: 10px;
+
+    h1 {
       font-size: 20px;
     }
-  
-    .personal-info p {
+
+    p {
       font-size: 16px;
     }
   }
-  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

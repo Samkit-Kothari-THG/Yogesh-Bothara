@@ -1,35 +1,49 @@
-.family-info {
-    background-color: #fffaf0;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-family: 'Georgia', serif;
-    max-width: 600px;
-  }
-  
-  .family-info h2 {
-    color: #b8860b; /* Gold color */
+.familyInfo {
+  background-color: #fffaf0;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+  max-width: 600px;
+
+  h2 {
+    color: #b8860b; // Gold color
     font-size: 22px;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    animation: fadeIn 2s;
   }
-  
-  .family-info p {
+
+  p, ul {
     color: #333;
     font-size: 18px;
+    margin: 10px 0;
   }
-  
+
+  ul {
+    padding-left: 20px;
+  }
+
   @media (max-width: 600px) {
-    .family-info {
-      padding: 10px;
-      margin: 10px;
-    }
-  
-    .family-info h2 {
+    padding: 10px;
+    margin: 10px;
+
+    h2 {
       font-size: 18px;
     }
-  
-    .family-info p {
+
+    p, li {
       font-size: 16px;
     }
   }
-  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

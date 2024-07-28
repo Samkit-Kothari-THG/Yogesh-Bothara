@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.scss';
 import PersonalInfo from './components/PersonalInfo';
 import FamilyInfo from './components/FamilyInfo';

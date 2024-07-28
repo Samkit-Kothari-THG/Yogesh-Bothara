@@ -1,18 +1,19 @@
-import styles from "./PersonalInfo.module.scss"
+import React from 'react';
+import styles from './PersonalInfo.module.scss';
 
-const PersonalInfo = () => {
+const PersonalInfo: React.FC = () => {
   return (
-    <div className={styles["personal-info"]}>
+    <div className={styles.personalInfo}>
       <h1>Yogesh Dipakkumar Bothara</h1>
-      <p>Date of Birth: 09 December 1999</p>
-      <p>Place of Birth: Yavatmal (Maharashtra)</p>
-      <p>Time of Birth: 00:05 AM</p>
-      <p>Height: 5 feet 10 inches</p>
-      <p>Blood Group: AB+</p>
-      <p>Profession: Engineer at Mercedes-Benz R&D India</p>
-      <p>Qualification: M.Tech. in Industrial Automation (NIT Trichy)</p>
+      <p><strong>Date of Birth:</strong> 09 December 1999</p>
+      <p><strong>Place of Birth:</strong> Yavatmal (Maharashtra)</p>
+      <p><strong>Time of Birth:</strong> 00:05 AM</p>
+      <p><strong>Height:</strong> 5 feet 10 inches</p>
+      <p><strong>Blood Group:</strong> AB+</p>
+      <p><strong>Profession:</strong> Engineer at Mercedes-Benz R&D India</p>
+      <p><strong>Qualification:</strong> M.Tech. in Industrial Automation (NIT Trichy)</p>
       <p>B.Tech. in Instrumentation Engineering with Gold Medal from GCOE Amravati</p>
-      <p>Current City: Bengaluru</p>
+      <p><strong>Current City:</strong> Bengaluru</p>
     </div>
   );
 };
