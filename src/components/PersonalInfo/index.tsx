@@ -23,15 +23,15 @@ const PersonalInfo: React.FC = () => {
       <p>
         <strong>Profession:</strong> Engineer at Mercedes-Benz R&D India
       </p>
+<p>
+        <strong>Current City:</strong> Bengaluru
+      </p>
       <p>
         <strong>Qualification:</strong> M.Tech. in Industrial Automation (NIT
         Trichy)
       </p>
       <p>
         B.Tech. in Instrumentation Engineering (Gold Medalist) (GCOE Amravati)
-      </p>
-      <p>
-        <strong>Current City:</strong> Bengaluru
       </p>
       <div className={styles.listContainer}>
         <p>
