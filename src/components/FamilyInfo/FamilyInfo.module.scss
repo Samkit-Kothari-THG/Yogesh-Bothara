@@ -3,23 +3,38 @@
   padding: 20px;
   margin: 20px auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: 'Georgia', serif;
   max-width: 600px;
+  opacity: 0;
+  animation: fadeInContainer 1s forwards;
+  animation-delay: 6s; // Adjust the delay for sequential animation
 
   h2 {
     color: #b8860b; // Gold color
     font-size: 22px;
     text-align: center;
     font-family: 'Tangerine', cursive;
-    animation: fadeIn 2s;
+    animation: fadeIn 2s forwards;
+    animation-delay: 6.5s;
   }
 
-  p, ul {
+  p,li {
     color: #333;
     font-size: 18px;
     margin: 10px 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
   }
+
+  p:nth-child(2) { animation-delay: 7s; }
+  p:nth-child(3) { animation-delay: 7.5s; }
+  p:nth-child(4) { animation-delay: 8s; }
+  p:nth-child(5) { animation-delay: 8.5s; }
+  p:nth-child(6) { animation-delay: 9s; }
+  ul li:nth-child(1) { animation-delay: 9.5s; }
+  ul li:nth-child(2) { animation-delay: 9.5s; }
+  ul li:nth-child(3) { animation-delay: 9.5s; }
 
   ul {
     padding-left: 20px;
@@ -39,6 +54,17 @@
   }
 
   @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInContainer {
     from {
       opacity: 0;
     }
