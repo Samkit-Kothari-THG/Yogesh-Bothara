@@ -1,0 +1,35 @@
+.personal-info {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+    max-width: 600px;
+  }
+  
+  .personal-info h1 {
+    color: #b8860b; /* Gold color */
+    font-size: 24px;
+  }
+  
+  .personal-info p {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 600px) {
+    .personal-info {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .personal-info h1 {
+      font-size: 20px;
+    }
+  
+    .personal-info p {
+      font-size: 16px;
+    }
+  }
+  

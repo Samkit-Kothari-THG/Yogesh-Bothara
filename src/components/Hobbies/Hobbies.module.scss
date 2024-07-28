@@ -1,0 +1,35 @@
+.hobbies {
+    background-color: #fff8dc;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+    max-width: 600px;
+  }
+  
+  .hobbies h2 {
+    color: #b8860b; /* Gold color */
+    font-size: 22px;
+  }
+  
+  .hobbies p {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 600px) {
+    .hobbies {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .hobbies h2 {
+      font-size: 18px;
+    }
+  
+    .hobbies p {
+      font-size: 16px;
+    }
+  }
+  
