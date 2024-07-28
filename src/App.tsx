@@ -17,6 +17,9 @@ const App: React.FC = () => {
         <FamilyInfo />
         <ContactInfo />
       </main>
+      <footer className="App-header">
+        <span>&#169; of website by Samkit Kothari</span>
+      </footer>
     </div>
   );
 };
