@@ -17,14 +17,16 @@ const FamilyInfo: React.FC = () => {
       <p>
         <strong>Dadisa:</strong> Late. Smt. Leelabai Bhawarilalji Bothara
       </p>
-      <p>
-        <strong>Uncles:</strong>
-      </p>
-      <ul>
-        <li>Manoj Bhawarilalji Bothara (Ralegaon) - Businessman</li>
-        <li>Gautam Bhawarilalji Bothara (Yavatmal) - Insurance Advisor</li>
-        <li>Anoop Bhawarilalji Bothara (Nashik) - Chartered Accountant</li>
-      </ul>
+      <div className={styles.listContainer}>
+        <p>
+          <strong>Uncles:</strong>
+        </p>
+        <ul>
+          <li>Manoj Bhawarilalji Bothara (Ralegaon) - Businessman</li>
+          <li>Gautam Bhawarilalji Bothara (Yavatmal) - Insurance Advisor</li>
+          <li>Anoop Bhawarilalji Bothara (Nashik) - Chartered Accountant</li>
+        </ul>
+      </div>
       <p>
         <strong>Sister:</strong> Tapasya Bothara
       </p>
@@ -34,13 +36,15 @@ const FamilyInfo: React.FC = () => {
       <p>
         <strong>Bhuvaji:</strong> Sau. Seema Nitinrajji Kothari (Darwha)
       </p>
-      <p>
-        <strong>Dadasa:</strong>
-      </p>
-      <ul>
-        <li>Shri. Bhagchandji P. Bothara (9422924225)</li>
-        <li>Shri. Dineshji P. Bothara (9422921520)</li>
-      </ul>
+      <div className={styles.listContainer}>
+        <p>
+          <strong>Dadasa:</strong>
+        </p>
+        <ul>
+          <li>Shri. Bhagchandji P. Bothara (9422924225)</li>
+          <li>Shri. Dineshji P. Bothara (9422921520)</li>
+        </ul>
+      </div>
     </div>
   );
 };

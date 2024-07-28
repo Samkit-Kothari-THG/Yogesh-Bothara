@@ -9,7 +9,10 @@
   opacity: 0;
   animation: fadeInContainer 1s forwards;
   animation-delay: 0s;
-
+  .listContainer{
+    display: flex;
+    gap:0.5rem;
+  }
   h1 {
     color: #b8860b; // Gold color
     font-size: 24px;

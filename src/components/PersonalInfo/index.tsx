@@ -33,23 +33,27 @@ const PersonalInfo: React.FC = () => {
       <p>
         <strong>Current City:</strong> Bengaluru
       </p>
-      <p>
-        <strong>Sakhe:</strong>
-      </p>
-      <ul>
-        <li>Self - Bothara</li>
-        <li>Mamaji- Kothari(Palrecha)</li>
-        <li>Dadisa - Runwal</li>
-        <li>Nanisa - Maloo</li>
-      </ul>
-      <p>
-        <strong>Hobbies</strong>
-      </p>
-      <ul>
-        <li>Traveling</li>
-        <li>Playing Badminton</li>
-        <li>Car and Bike Rides</li>
-      </ul>
+      <div className={styles.listContainer}>
+        <p>
+          <strong>Sakhe:</strong>
+        </p>
+        <ul>
+          <li>Self - Bothara</li>
+          <li>Mamaji- Kothari(Palrecha)</li>
+          <li>Dadisa - Runwal</li>
+          <li>Nanisa - Maloo</li>
+        </ul>
+      </div>
+      <div className={styles.listContainer}>
+        <p>
+          <strong>Hobbies:</strong>
+        </p>
+        <ul>
+          <li>Traveling</li>
+          <li>Playing Badminton</li>
+          <li>Car and Bike Rides</li>
+        </ul>
+      </div>
     </div>
   );
 };
