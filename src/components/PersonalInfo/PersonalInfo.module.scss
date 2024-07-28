@@ -4,7 +4,7 @@
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   max-width: 600px;
   opacity: 0;
   animation: fadeInContainer 1s forwards;
@@ -13,18 +13,21 @@
   h1 {
     color: #b8860b; // Gold color
     font-size: 24px;
-    text-align: center;
-    font-family: 'Tangerine', cursive;
+    
+    font-family: "Tangerine", cursive;
     animation: fadeInTitle 2s forwards;
     animation-delay: 0.5s;
   }
 
-  p {
+  p,
+  ul {
     color: #333;
     font-size: 18px;
     margin: 10px 0;
   }
-
+  ul {
+    list-style-type: none;
+  }
   @media (max-width: 600px) {
     padding: 10px;
     margin: 10px;
@@ -33,7 +36,8 @@
       font-size: 20px;
     }
 
-    p {
+    p,
+    li {
       font-size: 16px;
     }
   }

@@ -3,7 +3,6 @@ import "./App.scss";
 import PersonalInfo from "./components/PersonalInfo";
 import FamilyInfo from "./components/FamilyInfo";
 import ContactInfo from "./components/ContactInfo";
-import Hobbies from "./components/Hobbies";
 import PhotoFrame from "./components/PhotoFrame";
 
 const App: React.FC = () => {
@@ -17,7 +16,6 @@ const App: React.FC = () => {
         <PersonalInfo />
         <FamilyInfo />
         <ContactInfo />
-        <Hobbies />
       </main>
     </div>
   );
